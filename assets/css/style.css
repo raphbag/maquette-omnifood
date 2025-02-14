@@ -95,11 +95,14 @@ header a:hover {
     color: white;
 }
 
+section {
+    padding: 50px 30px;
+}
+
 .presentation {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 50px 20px;
     background-color: var(--background-color);
 }
 
@@ -107,7 +110,6 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 20px;
 }
 
 p {
@@ -116,7 +118,7 @@ p {
 
 .presentation > img {
     height: auto;
-    max-width: 500px;
+    max-width: 400px;
     object-fit: cover;
     margin: 0 auto;
 }
@@ -128,7 +130,7 @@ p {
 }
 
 .presentation p {
-    padding: 30px 0;
+    padding: 30px 0 40px 0;
 }
 
 .bouton_blanc {
@@ -149,6 +151,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .img_clients {
@@ -163,6 +166,70 @@ p {
 
 b {
     color: var(--primary-color);
+}
+
+.titre {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#titre_partenaire {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.logo_partenaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.partenaires img {
+    width: 100px;
+    margin: 20px;
+    color: var(--text-color);
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+.how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#titre_how {
+    color: var(--primary-color);
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.etape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombre {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #dcdada;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.etape img {
+    width: 100px;
+    padding: 20px 0;
+    margin: 0 auto;
 }
 
 @media (min-width: 1020px) { /** Version PC **/
