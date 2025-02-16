@@ -59,7 +59,8 @@ header a:hover {
     cursor: pointer;
 }
 
-#menu_mobile { /* A afficher lors du clique sur le menu */
+#menu_mobile {
+    /* A afficher lors du clique sur le menu */
     display: none;
     position: fixed;
     top: 0;
@@ -116,7 +117,7 @@ p {
     color: var(--text-color);
 }
 
-.presentation > img {
+.presentation>img {
     height: auto;
     max-width: 400px;
     object-fit: cover;
@@ -199,6 +200,8 @@ b {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
 
 }
 
@@ -232,23 +235,42 @@ h3 {
     margin: 0 auto;
 }
 
-@media (min-width: 1020px) { /** Version PC **/
+@media (min-width: 1020px) {
+
+    /** Version PC **/
     header nav {
         display: flex;
     }
+
     #menu {
         display: none;
     }
+
     #menu_mobile {
         display: none;
     }
+
     .presentation {
         flex-direction: row;
     }
+
     .presentation-texte {
         width: 50%;
     }
-    .presentation > img {
+
+    .presentation>img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .etape_texte {
+        width: 50%;
+    }
+
+
+    .etape img {
         width: 50%;
     }
 }
