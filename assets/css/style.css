@@ -20,7 +20,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.5;
     color: var(--secondary-color);
-    margin: auto;
+    margin: 0 auto;
 }
 
 a {
@@ -59,7 +59,8 @@ header a:hover {
     cursor: pointer;
 }
 
-#menu_mobile { /* A afficher lors du clique sur le menu */
+#menu_mobile {
+    /* A afficher lors du clique sur le menu */
     display: none;
     position: fixed;
     top: 0;
@@ -116,7 +117,7 @@ p {
     color: var(--text-color);
 }
 
-.presentation > img {
+.presentation>img {
     height: auto;
     max-width: 400px;
     object-fit: cover;
@@ -195,11 +196,13 @@ b {
     opacity: 50%;
 }
 
-.how {
+.how,
+.meals {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #titre_how {
@@ -226,29 +229,107 @@ h3 {
     margin-bottom: 20px;
 }
 
-.etape img {
-    width: 100px;
-    padding: 20px 0;
-    margin: 0 auto;
+.etape-texte {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    justify-content: center;
 }
 
-@media (min-width: 1020px) { /** Version PC **/
+.etape img {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 200px;
+    order: 0;
+    object-fit: scale-down;
+}
+
+.meals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titre_meals {
+    color: var(--primary-color);
+}
+
+.box_meal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    transition: all 0.4s;
+    max-width: 300px;
+}
+
+.meal:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+}
+
+.meal img {
+    width: 100%;
+    border-radius: 11px 11px 0 0;
+}
+
+
+@media (min-width: 1020px) {
+
+    /** Version PC **/
     header nav {
         display: flex;
     }
+
     #menu {
         display: none;
     }
+
     #menu_mobile {
         display: none;
     }
+
     .presentation {
         flex-direction: row;
     }
+
     .presentation-texte {
         width: 50%;
     }
-    .presentation > img {
+
+    .presentation>img {
         width: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+    .etape {
+        flex-direction: row;
+    }
+
+    .etape-texte {
+        width: 50%;
+        order: 0;
+    }
+
+    .etape img {
+        width: 20%;
+        order: 1;
+    }
+
+    .reverse .etape-texte {
+        order: 1;
+    }
+
+    .reverse img {
+        order: 0;
     }
 }
