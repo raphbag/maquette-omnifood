@@ -11,7 +11,7 @@
 :root {
     --primary-color: #ff8800;
     --secondary-color: #333;
-    --text-color: #777777;
+    --text-color: #4e4e4e;
     --hover-color: #b87a00;
     --background-color: #ffead0;
 }
@@ -23,8 +23,8 @@ html {
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.8;
     color: var(--secondary-color);
     margin: 0 auto;
 }
@@ -42,6 +42,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    flex-wrap: nowrap;
     padding: 30px;
     font-weight: 600;
 }
@@ -65,6 +66,8 @@ header a:hover {
 
 #menu {
     cursor: pointer;
+    width: 39px;
+    height: 39px;
 }
 
 #menu_mobile {
@@ -75,26 +78,33 @@ header a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: white;
     z-index: 1000;
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
 #menu_mobile a {
-    color: white;
+    color: var(--text-color);
     font-size: 1.5rem;
-    margin: 20px;
+    font-weight: 500;
+    margin: 10px;
 }
 
 .bouton_orange {
     background-color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 8px;
     font-weight: 700;
-    color: white;
+    color: white !important;
     transition: ease-in-out 0.3s;
 }
 
@@ -107,7 +117,7 @@ header a:hover {
 /* Presentation */
 
 section {
-    padding: 50px 30px;
+    padding: 50px 25px;
 }
 
 .presentation {
@@ -303,7 +313,7 @@ h3 {
 }
 
 .description_meal {
-    padding: 10px 20px;
+    padding: 10px 25px;
 }
 
 .etiquette_meal span {
@@ -325,6 +335,12 @@ h3 {
     background-color: #ffe100;
 }
 
+h4 {
+    margin-bottom: 13px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -341,13 +357,14 @@ ul {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    gap: 6px;
+    gap: 15px;
 }
 
 .description_meal li ion-icon,
 .diet li ion-icon {
     color: var(--primary-color);
     width: 24px;
+    height: 24px;
 }
 
 strong {
@@ -422,7 +439,7 @@ blockquote {
 .container_pricing {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
+    gap: 30px;
     justify-items: center;
     padding-bottom: 50px;
 }
@@ -430,13 +447,14 @@ blockquote {
 .pricing_plan {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px 40px;
+    padding: 37px;
     border: 2px solid var(--background-color);
     border-radius: 11px;
-    max-width: 500px;
+    width: 100%;
 }
 
 #plan_2 {
@@ -451,6 +469,7 @@ blockquote {
     font-size: 17px;
     font-weight: 600;
     color: var(--primary-color);
+    margin-bottom: 25px;
 }
 
 .prix {
@@ -465,30 +484,142 @@ blockquote {
     padding-right: 5px;
 }
 
-.description_prix {
-    font-size: 14px;
-    text-align: center;
-}
-
-.container_pricing ul {
+.pricing_plan ul {
     padding: 20px 0;
 }
 
-.container_pricing li {
+.pricing_plan li {
     display: flex;
     padding: 10px 0;
     align-items: center;
 }
 
-.container_pricing li ion-icon {
+.pricing_plan li ion-icon {
     color: var(--primary-color);
     width: 25px;
     height: 25px;
     padding-right: 10px;
 }
 
+.description_prix {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container_fonction {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.fonction ion-icon {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    width: 25px;
+    height: 25px;
+    padding: 13px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+/* Inscription */
+
+.container_inscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 11px;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #45260a;
+}
+
+.image_inscription {
+    background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url('../images/formulaire.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 11px 11px 0 0;
+    order: 0;
+    height: 430px;
+    width: 100%;
+}
+
+.texte_inscription {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+}
+
+.texte_inscription h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.texte_inscription p {
+    margin-bottom: 20px;
+    color: #45260a;
+}
+
+.element_form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    padding: 10px;
+    border-radius: 11px;
+    border: 1px solid #e67e22;
+    background-color: #fdf2e9;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+}
+
+form input::placeholder {
+    color: #999999;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 7px rgba(253, 242, 233, 0.5);
+}
+
+.bouton_marron {
+    background-color: #45260a;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    transition: ease-in-out 0.3s;
+    width: 100%;
+}
+
+.bouton_marron:hover {
+    background-color: white;
+    color: #555555;
+}
+
 /* Version Tablette */
 @media (min-width: 600px) {
+
+    body {
+        font-size: 16px;
+    }
 
     .etape {
         flex-direction: row;
@@ -538,23 +669,48 @@ blockquote {
     }
 
     .container_galerie {
-        display: grid;
         grid-template-columns: repeat(6, 1fr);
     }
 
     .container_pricing {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .container_fonction {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container_inscription {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .image_inscription {
+        order: 1;
+        border-radius: 0 11px 11px 0;
+        height: 100%;
+        width: 500px;
+    }
+
+    .texte_inscription {
+        padding: 48px 64px 64px;
+    }
 }
 
 /* Version PC */
 @media (min-width: 900px) {
 
+    body {
+        font-size: 17px;
+        font-weight: 380;
+    }
+
     header nav {
         display: flex;
     }
 
-    #menu {
+    .bouton_menu {
         display: none;
     }
 
@@ -596,7 +752,14 @@ blockquote {
     }
 
     .container_galerie {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pricing_plan {
+        width: auto;
+    }
+
+    .container_fonction {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

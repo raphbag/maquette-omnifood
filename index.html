@@ -21,7 +21,7 @@
         </nav>
 
         <!--Menu Version Mobile -->
-        <img src="assets\images\icon_menu.svg" alt="Icon Menu déroulant" title="Menu" id="menu">
+        <button class="bouton_menu"><ion-icon name="menu-outline" title="Menu" id="menu"></ion-icon></button>
         <div id="menu_mobile">
             <a href="#how">How it works</a></li>
             <a href="#meals">Meals</a></li>
@@ -295,6 +295,62 @@
             <p class="description_prix">Prices include all applicable taxes. You can cancel at any time. Both plans
                 include the following:
             </p>
+            <div class="container_fonction">
+                <div class="fonction">
+                    <ion-icon name="infinite-outline"></ion-icon>
+                    <h4>Never cook again!</h4>
+                    Our subscriptions cover 365 days per year, even including major holidays.
+                </div>
+                <div class="fonction">
+                    <ion-icon name="nutrition-outline"></ion-icon>
+                    <h4>Local and organic</h4>
+                    Our cooks only use local, fresh, and organic products to prepare your meals.
+                </div>
+                <div class="fonction">
+                    <ion-icon name="leaf-outline"></ion-icon>
+                    <h4>No waste</h4>
+                    All our partners only use reusable containers to package all your meals.
+                </div>
+                <div class="fonction">
+                    <ion-icon name="pause-outline"></ion-icon>
+                    <h4>Pause anytime</h4>
+                    Going on vacation? Just pause your subscription, and we refund unused days.
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container_inscription">
+                <div class="image_inscription" role="img"></div>
+                <div class="texte_inscription">
+                    <h2>Get your first meal for free!</h2>
+                    <p>Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel
+                        or
+                        pause anytime. And the first meal is on us!</p>
+                    <form action="#" method="post">
+                        <div class="element_form">
+                            <label for="full_name">Full Name</label>
+                            <input type="text" name="full_name" id="full_name" placeholder="John Smith">
+                        </div>
+                        <div class="element_form">
+                            <label for="email">Email adress</label>
+                            <input type="email" name="email" id="email" placeholder="me@example.com">
+                        </div>
+                        <div class="element_form">
+
+                            <label for="option">Where did you hear from us?</label>
+                            <select name="option" id="option">
+                                <option value="option1" selected>Please choose one option:</option>
+                                <option value="option2">Friends and family</option>
+                                <option value="option3">YouTube video</option>
+                                <option value="option3">Podcast</option>
+                                <option value="option3">Facebook ad</option>
+                                <option value="option3">Others</option>
+                            </select>
+                        </div>
+                        <button class="bouton_marron">Sign up now</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -303,6 +359,7 @@
     <!-- Librairie icones -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
