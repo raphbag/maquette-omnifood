@@ -393,7 +393,7 @@ blockquote {
 
 .testimonial p {
     padding: 10px 0;
-    font-size: 0.8rem;
+    font-size: 14px;
 }
 
 .container_galerie {
@@ -415,6 +415,76 @@ blockquote {
 
 .container_galerie img:hover {
     transform: scale(1.1);
+}
+
+/* Pricing */
+
+.container_pricing {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    justify-items: center;
+    padding-bottom: 50px;
+}
+
+.pricing_plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 40px;
+    border: 2px solid var(--background-color);
+    border-radius: 11px;
+    max-width: 500px;
+}
+
+#plan_2 {
+    background-color: var(--background-color);
+}
+
+#titre_pricing {
+    color: var(--primary-color);
+}
+
+.titre_plan {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.prix {
+    font-size: 50px;
+    font-weight: 600;
+    color: #312d2d;
+}
+
+.prix span {
+    font-size: 25px;
+    font-weight: 500;
+    padding-right: 5px;
+}
+
+.description_prix {
+    font-size: 14px;
+    text-align: center;
+}
+
+.container_pricing ul {
+    padding: 20px 0;
+}
+
+.container_pricing li {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.container_pricing li ion-icon {
+    color: var(--primary-color);
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
 }
 
 /* Version Tablette */
@@ -470,6 +540,10 @@ blockquote {
     .container_galerie {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .container_pricing {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
