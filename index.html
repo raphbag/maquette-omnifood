@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <a href="#"><img src="assets/images/omnifood-logo.png" alt="Omnifood" width="200px"></a>
+        <a href="#"><img src="assets/images/omnifood-logo.png" alt="Omnifood" height="18px"></a>
         <nav>
             <a href="#how">How it works</a></li>
             <a href="#meals">Meals</a></li>
@@ -40,8 +40,10 @@
                     <p>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to
                         your
                         personal tastes and nutritional needs.</p>
-                    <a href="#try" class="bouton_orange">Start eating well</a>
-                    <a href="#how" class="bouton_blanc">Learn more ↓</a>
+                    <div class="bouton_presentation">
+                        <a href="#try" class="bouton_orange">Start eating well</a>
+                        <a href="#how" class="bouton_blanc">Learn more ↓</a>
+                    </div>
                     <div class="clients">
                         <div class="img_clients">
                             <img src="assets/images/avatar/client-1.jpg" alt="Photo client 1" />
@@ -62,11 +64,11 @@
         <div class="partenaires">
             <p class="titre" id="titre_partenaire">As featured in</p>
             <div class="logo_partenaire">
-                <img src="assets\images\partenaire\techcrunch.png" alt="Image partenaire Techcrunch">
-                <img src="assets\images\partenaire\business-insider.png" alt="Image partenaire Business Insider">
-                <img src="assets\images\partenaire\the-new-york-times.png" alt="Image partenaire The New York Times">
-                <img src="assets\images\partenaire\forbes.png" alt="Image partenaire Forbes">
-                <img src="assets\images\partenaire\usa-today.png" alt="Image partenaire USA Today">
+                <img src="assets/images/partenaire/techcrunch.png" alt="Image partenaire Techcrunch">
+                <img src="assets/images/partenaire/business-insider.png" alt="Image partenaire Business Insider">
+                <img src="assets/images/partenaire/the-new-york-times.png" alt="Image partenaire The New York Times">
+                <img src="assets/images/partenaire/forbes.png" alt="Image partenaire Forbes">
+                <img src="assets/images/partenaire/usa-today.png" alt="Image partenaire USA Today">
             </div>
         </div>
 
@@ -82,15 +84,13 @@
                         meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter
                         what diet you follow!</p>
                 </div>
-                <img src="assets\images\appli-1.png" alt="Image de l'application">
+                <img src="assets/images/appli-1.png" alt="Image de l'application">
             </div>
 
             <div class="etape reverse">
                 <div class="etape-texte">
-
                     <p class="nombre">02</p>
                     <h3>Approve your weekly meal plan</h3>
-
                     <p>Once per week, approve the meal plan generated for you by Omnifood AI. You can change
                         ingredients,
                         swap entire meals, or even add your own recipes.</p>
@@ -318,9 +318,9 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="try" id="try">
             <div class="container_inscription">
-                <div class="image_inscription" role="img"></div>
+                <div class="image_inscription" role="img"><img src="assets/images/formulaire.jpg" alt=""></div>
                 <div class="texte_inscription">
                     <h2>Get your first meal for free!</h2>
                     <p>Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel
@@ -354,45 +354,41 @@
         </section>
     </main>
     <footer>
-        <div class="container_footer">
-            <div class="logo_footer">
-                <img src="assets/images/omnifood-logo.png" alt="Logo Omnifood">
-                <div class="icon_footer">
-                    <ion-icon name="logo-instagram" class="icon-reseau"></ion-icon>
-                    <ion-icon name="logo-facebook" class="icon-reseau"></ion-icon>
-                    <ion-icon name="logo-twitter" class="icon-reseau"></ion-icon>
-                </div>
-                <p>Copyright © <span id="currentYear"></span> by Omnifood, Inc. All rights reserved.</p>
+        <div class="logo_footer">
+            <img src="assets/images/omnifood-logo.png" alt="Logo Omnifood">
+            <div class="icon_footer">
+                <ion-icon name="logo-instagram" class="icon-reseau"></ion-icon>
+                <ion-icon name="logo-facebook" class="icon-reseau"></ion-icon>
+                <ion-icon name="logo-twitter" class="icon-reseau"></ion-icon>
             </div>
-            <div class="contact">
-                <p>Contact us</p>
-                <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
-                <p>415-201-6370<br>
-                    hello@omnifood.com</p>
-            </div>
-            <div>
-                <nav>
-                    <p>Account</p>
-                    <a href="#">Create account</a>
-                    <a href="#">Sign in</a>
-                    <a href="#">iOS app</a>
-                    <a href="#">Android app</a>
-                </nav>
-            </div>
-            <nav>
-                <p>Company</p>
-                <a href="#">About Omnifood</a>
-                <a href="#">For Business</a>
-                <a href="#">Cooking partners</a>
-                <a href="#">Careers</a>
-            </nav>
-            <nav>
-                <p>Resources</p>
-                <a href="#"><i>Recipe directory</i></a>
-                <a href="#"><i>Help center</i></a>
-                <a href="#"><i>Privacy & terms</i></a>
-            </nav>
+            <p>Copyright © <span id="currentYear"></span> by Omnifood, Inc. All rights reserved.</p>
         </div>
+        <div class="contact">
+            <strong>Contact us</strong>
+            <p id="text-color">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p>415-201-6370<br>
+                hello@omnifood.com</p>
+        </div>
+        <nav>
+            <strong>Account</strong>
+            <a href="#">Create account</a>
+            <a href="#">Sign in</a>
+            <a href="#">iOS app</a>
+            <a href="#">Android app</a>
+        </nav>
+        <nav>
+            <strong>Company</strong>
+            <a href="#">About Omnifood</a>
+            <a href="#">For Business</a>
+            <a href="#">Cooking partners</a>
+            <a href="#">Careers</a>
+        </nav>
+        <nav>
+            <strong>Resources</strong>
+            <a href="#">Recipe directory</a>
+            <a href="#">Help center</a>
+            <a href="#">Privacy & terms</a>
+        </nav>
     </footer>
     <!-- Librairie icones -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
