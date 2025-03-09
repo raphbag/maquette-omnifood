@@ -614,6 +614,50 @@ select:focus {
     color: #555555;
 }
 
+footer {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer a {
+    color: var(--text-color);
+    width: auto;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo_footer {
+    margin-bottom: 20px;
+}
+
+.logo_footer img {
+    width: 130px;
+    margin-bottom: 26px;
+}
+
+.icon_footer {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.icon_footer ion-icon {
+    color: var(--text-color);
+    width: 19px;
+    height: 19px;
+}
+
+.logo_footer p {
+    font-size: 11px;
+}
+
+
+
 /* Version Tablette */
 @media (min-width: 600px) {
 
