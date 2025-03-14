@@ -137,7 +137,13 @@ button {
 /* Presentation */
 
 section {
-    padding: 50px 25px;
+    padding: 80px 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Trouver la valuer  */
 }
 
 .presentation {
@@ -147,8 +153,7 @@ section {
 .container_presentation {
     display: flex;
     flex-direction: column;
-    max-width: 1250px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
 }
 
 h1 {
@@ -236,21 +241,20 @@ b {
 }
 
 .partenaires {
-    margin: 0 auto;
-    max-width: 950px;
-    padding: 0 25px;
+    /* margin: 0 auto; */
+    /* max-width: 950px; */
+    padding: 48px 0 32px;
 }
 
 .titre {
-    margin-top: 30px;
-    font-size: 0.8rem;
+    font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 #titre_partenaire {
     text-align: center;
-    color: var(--text-color);
+    color: #888888;
 }
 
 .logo_partenaire {
@@ -258,46 +262,42 @@ b {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+    margin-top: 20px;
 }
 
 .partenaires img {
     max-width: 100px;
     min-width: 0;
-    margin: 20px 5px;
     color: var(--text-color);
     filter: brightness(0);
     opacity: 50%;
     height: auto;
 }
 
+/* How it works */
+
 .how,
 .meals {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1250px;
-    margin: 0 auto;
+    /* max-width: 1250px; */
+    /* margin: 0 auto; */
 }
 
 #titre_how {
     color: var(--primary-color);
 }
 
-h2 {
-    margin-bottom: 50px;
-}
-
-/* How it works */
-
 .etape {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .nombre {
-    font-size: 3.5rem;
+    font-size: 50px;
     font-weight: 700;
     color: #dcdada;
 }
@@ -323,15 +323,9 @@ h3 {
 
 /* Meals */
 
-.meals {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 #titre_meals {
     color: var(--primary-color);
+    margin: 0 auto;
 }
 
 .container_meals {
@@ -351,6 +345,11 @@ h3 {
 .meal:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+}
+
+.meals h2 {
+    padding-bottom: 60px;
+    margin: 0 auto;
 }
 
 .meal img {
@@ -431,11 +430,15 @@ strong {
     padding: 0px
 }
 
+#titre_testimonials {
+    color: var(--primary-color);
+}
+
 .container_testimonials {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 50px 30px;
+    padding: 60px 30px;
 }
 
 .container_avis {
@@ -548,7 +551,7 @@ blockquote {
 }
 
 .pricing_plan ul {
-    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 .pricing_plan li {
@@ -567,13 +570,15 @@ blockquote {
 .description_prix {
     font-size: 14px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
 }
 
 .container_fonction {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+    margin: 0 auto;
+    max-width: 950px;
 }
 
 .fonction ion-icon {
@@ -600,8 +605,8 @@ blockquote {
     background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    max-width: 960px;
-    margin: 0 auto;
+    /* max-width: 960px; */
+    /* margin: 0 auto; */
     color: #45260a;
 }
 
@@ -884,6 +889,7 @@ footer a,
     .presentation-texte {
         width: 50%;
         text-align: left;
+        align-items: normal;
     }
 
     h1 {
