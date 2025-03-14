@@ -75,7 +75,7 @@ header a:hover {
 }
 
 #menu_mobile {
-    /* A afficher lors du clique sur le menu */
+    /* Afficher lorsque on clique sur le menu */
     display: none;
     position: absolute;
     top: 0;
@@ -143,7 +143,6 @@ section {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    /* Trouver la valuer  */
 }
 
 .presentation {
@@ -153,7 +152,6 @@ section {
 .container_presentation {
     display: flex;
     flex-direction: column;
-    /* max-width: 1200px; */
 }
 
 h1 {
@@ -241,8 +239,6 @@ b {
 }
 
 .partenaires {
-    /* margin: 0 auto; */
-    /* max-width: 950px; */
     padding: 48px 0 32px;
 }
 
@@ -281,8 +277,6 @@ b {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* max-width: 1250px; */
-    /* margin: 0 auto; */
 }
 
 #titre_how {
@@ -488,7 +482,7 @@ blockquote {
 .container_pricing {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
+    gap: 50px;
     justify-items: center;
     padding-bottom: 50px;
 }
@@ -504,6 +498,10 @@ blockquote {
     border: 2px solid var(--background-color);
     border-radius: 11px;
     width: 100%;
+}
+
+.pricing h2 {
+    margin-bottom: 50px;
 }
 
 #plan_2 {
@@ -605,8 +603,6 @@ blockquote {
     background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    /* max-width: 960px; */
-    /* margin: 0 auto; */
     color: #45260a;
 }
 
@@ -836,6 +832,8 @@ footer a,
 
     .container_pricing {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+        margin: 0 auto;
     }
 
     .container_fonction {
